@@ -12,9 +12,9 @@ const PreviewCard: React.FC<PreviewCardProps> = ({ blog }) => {
                     <p className="card-text text-muted mb-2">{blog.name}</p>
                     <p className="card-text">{blog.content.substring(0, 150)} ...</p>
                     <div className="d-flex align-items-center justify-content-between">
-                        <p className="card-text text-muted mb-0">
+                        <span className="card-text text-muted mb-0">
                             {moment(blog._created).format("MMM Do, YYYY")}
-                        </p>
+                        </span>
                         <Link className="btn btn-sm btn-primary" to={`/details/${blog.id}`}>Interested?  Read More!</Link>
                     </div>
                 </div>
